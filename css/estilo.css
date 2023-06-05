@@ -1,0 +1,1159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 180px;
+    background: radial-gradient(#000,#000000,#000000);
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    height: 180px;    
+}
+
+header{
+    background: linear-gradient(#000,#0b1d2e, #4955b4 );
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 180px;
+    z-index: 1;
+}
+
+#logo{
+    width: 200px;
+    height: 180px;
+    filter: invert(1);
+}
+
+#logo img{
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header span, header nav{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+header span{
+    letter-spacing: 4px;
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    background: linear-gradient(#4955b4 ,#0b1d2e,#000);
+    height: 180px;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#info{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#info a{
+    text-decoration: none;
+    font-size: 14pt;
+    color:#fff;
+}
+
+#rede_social{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+}
+
+#rede_social p{
+    width: 45%;
+    text-align: right;
+    color: #fff;
+    font-size: 14pt;
+}
+
+#rede_social a{
+    width: 30px;
+    margin: 10px;
+}
+
+#rede_social a img{
+    height: 100%;
+    width: 100%;
+    filter: invert(1);
+}
+
+
+
+main{
+    width: 960px;
+    margin: auto;
+    min-height: 450px;
+}
+
+.texto_banner{
+    font-size: 27pt;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+#assistir, #assinar{
+    text-decoration: none;
+    display: block;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+#assistir{
+    background-color: #000000;
+    color: #4955b4;
+    border: 1px solid #4955b4;
+}
+
+#assistir:hover{
+    background-color: #4955b4;
+    color: #fff;
+}
+
+
+
+#assinar{
+    background-color: #000;
+    color: #4955b4;
+    border: 1px solid #4955b4;
+}
+
+#assinar:hover{
+    background-color: #f71616;
+    color: #fff;
+    border: 1px solid #f71616;
+}
+
+
+.principal{
+    width: 100%;
+    color: #fff;
+    background: linear-gradient( #4955b4,#0b1d2e ,transparent) ;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4955b4;
+}
+
+.principal figure{
+    width: 25%;
+    height: 230px;
+    margin: 30px 20px;
+}
+
+.principal img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.principal div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+
+#semanal{
+    color: #fff;
+    text-align: center;
+}
+
+.cartaz{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: flex-start;
+    background: linear-gradient(#4955b4,#0b1d2e,#000);
+    box-shadow: 0 0 15px #0b1d2e;
+}
+
+.cartaz h3{
+    width: 100%;
+    margin: 10px ;
+}
+
+.cartaz article .foto{
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+}
+
+.cartaz article img{
+    width: 150px;
+}
+
+.cartaz article{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#titulo {
+    color: #fff;
+}
+
+#titulo ul{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#titulo h3{
+    text-transform: uppercase;
+}
+
+.figura {
+    display: inline-block;
+    width: 230px;
+    height: 250px;
+    perspective: 600px;
+    position: relative;
+    box-shadow: 5px 5px 15px #fff;
+}
+
+.secao{
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.secao, img{
+    width: 100%;
+    height: 100%;
+}
+
+.secao:hover{
+    transform: rotateY(180deg);
+}
+
+.fig1, .back{
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.figura section .back{
+    transform: rotateY(180deg);
+}
+
+.back{
+    color: #fff;
+    background: linear-gradient(#4955b4,#0b1d2e,#000);
+    display: block;
+    text-align: center;
+}
+
+.restricao{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.sinopse{
+    display: block;
+    height: auto;
+    width: 180px;
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sinopse:hover{
+    background-color: #fff;
+    color: #4955b4;
+    text-shadow: 2px 6px 4px #0b1d2e;
+}
+
+.figura:hover{
+    box-shadow: none;
+}
+
+#escolha_plano{
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24pt;
+}
+
+#incluso{
+    color: #fff;
+    text-align: center;
+    font-family:monospace ;
+    font-size: 12pt;
+}
+
+#beneficios{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#beneficios li{
+    margin: auto;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+#planos{
+    color: #fff;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+#trimestre{
+    background: linear-gradient(#4955b4,#0b1d2e,transparent);
+    margin: 0 10px;
+    padding: 0;
+    padding-top: 30px;
+    height: 100%;
+    width: 30%;
+    border: 1px 1px solid transparent;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#trimestre h4{
+    font-size: 16pt;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#trimestre h2{
+    font-size: 20pt ;
+    margin: 10px 0;
+}
+
+#trimestre p{
+    margin: 0;
+    display: block;
+}
+
+#trimestre a{
+    display: block;
+    text-decoration: none;
+    background: #6a819b;
+    width: 85%;
+    height: auto;
+    font-size: 10pt;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px ;
+    line-height: 25px;
+    border-radius: 20px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+#trimestre a:hover{
+    animation: art_plano ease-in-out;
+    background: linear-gradient(#fff, #ccc);
+    color: #4955b4;
+    width: 80%;
+    display: block;
+    text-shadow: 1px 3px 7px#4955b4;
+}
+
+@keyframes art_plano{
+    0%{
+        background: transparent;
+    }
+}
+
+#anual{
+    background: linear-gradient(#4955b4,#0b1d2e,transparent);
+    margin: 0 10px;
+    padding: 0;
+    padding-top: 30px;
+    height: 100%;
+    width: 30%;
+    border: 1px 1px solid transparent;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#anual h4{
+    font-size: 16pt;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#anual h2{
+    font-size: 20pt ;
+    margin: 10px 0;
+}
+
+#anual p{
+    margin: 0;
+    display: block;
+}
+
+#anual a{
+    display: block;
+    text-decoration: none;
+    background: #6a819b;
+    width: 85%;
+    height: auto;
+    font-size: 11pt;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px ;
+    line-height: 25px;
+    border-radius: 20px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+#anual a:hover{
+    animation: art_plano ease-in-out;
+    background:linear-gradient(#fff,#ccc) ;
+    color: #4955b4;
+    width: 80%;
+    display: block;
+    text-shadow: 1px 3px 7px#4955b4;
+}
+
+
+#mes{
+    background: linear-gradient(#4955b4,#0b1d2e,transparent);
+    margin: 0 10px;
+    padding: 0;
+    padding-top: 30px;
+    height: 100%;
+    width: 30%;
+    border: 1px 1px solid transparent;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#mes h4{
+    font-size: 16pt;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#mes h2{
+    font-size: 20pt ;
+    margin: 10px 0;
+}
+
+#mes p{
+    margin: 0;
+    display: block;
+}
+
+#mes a{
+    display: block;
+    text-decoration: none;
+    background: #6a819b;
+    width: 85%;
+    height: auto;
+    font-size: 11pt;
+    padding: 10px;
+    margin: auto;
+    margin-top: 42px ;
+    line-height: 25px;
+    border-radius: 20px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+#mes a:hover{
+    animation: art_plano ease-in-out;
+    background:linear-gradient(#fff,#ccc) ;
+    color: #4955b4;
+    width: 80%;
+    display: block;
+    text-shadow: 1px 3px 7px#4955b4;
+}
+
+#universo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.back_universo{
+    display: flex;
+    width: 30%;
+    margin: 0;
+    margin-bottom: 10px;
+    height: 510px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    align-items: end;
+    justify-content: center;
+}
+
+.back_universo:hover{
+    border: 1px solid #4955b4;
+}
+
+.foto_universo{
+    width: 100px;
+    height: 100px;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+
+#desc_universo{
+    text-align: center;
+    margin: 20px;
+    font-size: 30pt;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+}
+
+#nba{
+    background-image: url(imagens/sc-lb.jpg);
+    background-position:top right -120px ;
+    background-repeat: no-repeat;
+}
+
+#nba:hover{
+    background-image: url(imagens/goats.jpg);
+    background-position:left bottom;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+#dc{
+    background-image: url(imagens/batman-superman.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dc:hover{
+    background-image:url(imagens/deathstroke.jpg) ;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#cartoon{
+    background-image: url(imagens/regular.jpg);
+    background-position:center right -60px;
+    background-repeat: no-repeat;
+}
+
+#cartoon:hover{
+    background-image: url(imagens/darwin.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#disney{
+    background-image: url(imagens/disney.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#disney:hover{
+    background-image: url(imagens/wally.jpg);
+    background-repeat: no-repeat;
+}
+
+#marvel{
+    background-image: url(imagens/civil.jpg);
+    background-position: top -110px left -40px;
+    background-repeat: no-repeat;
+}
+
+#marvel:hover{
+    background-image: url(imagens/panther.jpg);
+    background-position: top -90px left -80px;
+    background-repeat: no-repeat;
+}
+
+#champions{
+    background-image: url(imagens/ney.jpg);
+    background-position: left top ;
+}
+
+#champions:hover{
+    background-image:url(imagens/ney.jpg) ;
+    background-position: right -95px top ;
+}
+
+#sobre{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.avaliacao{
+    font-size: 35pt;
+    margin-top: 100px;
+}
+
+#view{
+    width: 40px;
+    height: 40px;
+    font-size: 20pt;
+    padding: 5px;
+    background-color: #4955b4;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.borda{
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px dashed #4955b4;
+    position: absolute;
+}
+
+.estrela img{
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+
+@keyframes rotacao{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.borda{
+    animation: rotacao 5s linear infinite;
+}
+
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+#skills div{
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+#skills span{
+    display: none;
+}
+
+.barra{
+    background: linear-gradient(45deg, #ccc, #fff);
+    height: 34px;
+    width: auto;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+@keyframes avaliacoes{
+    0%{
+        width: 0%;
+    }
+}
+
+#view:hover + section div span{
+    animation: avaliacoes 2s;
+    height: 33px;
+    line-height: 35px;
+    border-radius: 15px;
+    color: #fff;
+    background: linear-gradient(45deg, #727dcc,#4955b4, #0b1d2e);
+    border: 2px solid #fff;
+    padding: 0;
+    display: block;
+}
+
+#skills div:nth-child(1) span{width: 80%;}
+#skills div:nth-child(2) span{width: 90%;}
+#skills div:nth-child(3) span{width: 85%;}
+#skills div:nth-child(4) span{width: 75%;}
+#skills div:nth-child(5) span{width: 95%;}
+#skills div:nth-child(6) span{width: 85%;}
+
+#contato{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 100px 0;
+}
+
+.contato_detalhes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contato_detalhes span{
+    margin-right:10px ;
+}
+
+.email a {
+    text-decoration: none;
+    color: #4955b4;
+}
+
+.cel a{
+    text-decoration: none;
+    color: #4955b4;
+}
+
+#contato form{
+    display: flex;
+}
+
+#contato form .col1{
+    width: 50%;
+    text-align: right;
+    margin: 5px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+#contato form .col2{
+    width: 50%;
+    text-align: right;
+    margin: 5px;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+#contato form input{
+    width: 95%;
+    margin: 10px 0;
+    height: 60px;
+    border-radius: 20px;
+    padding: 0 0 0 5px ;
+    border: 3px solid #fff;
+    font-size: 12pt;
+    background: linear-gradient( #fff);
+    outline: none;
+    transition: .3s ease;
+}
+
+#contato form textarea{
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 225px;
+    border-radius: 20px;
+    padding: 5px 0 0 5px;
+    border: 3px solid #fff;
+    font-size: 12pt;
+    background: linear-gradient( #fff);
+    outline: none;
+    transition: .3s ease;
+}
+
+#contato form input:hover, #contato form input:focus, #contato form textarea:hover,#contato form textarea:focus{
+    border-color: #4955b4;
+}
+
+#contato_principal{
+    text-align: center;
+    color: #fff;
+}
+
+#contato form button{
+    padding: 13px 20px;
+    margin: 10px 0 ; 
+    background-color: #4955b4;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+@media (max-width:1200px){
+    .sinopse{
+        height: auto;
+    }
+    #mes a{
+        height: auto;
+    }
+    #anual a{
+        height: auto;
+    }
+    #trimestre a{
+        height: auto;
+        font-size: 10pt;
+    }
+    .barra{
+        height: auto;
+    }
+}
+
+
+@media (max-width:1024px){
+    main{width: 700px;}
+    header .container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    #esquerda{height: 70px;}
+
+    #esquerda span{
+        font-size: 8pt;
+    }
+
+    .principal figure{
+        height: 180px;
+    }
+
+    #beneficios li{
+        width: 50%;
+        text-align: left;
+        list-style: none;
+    }
+    #nba{
+        background-position:right -70px top -90px;
+    }
+    #nba:hover{
+        background-position: center;
+    }
+    #cartoon{background-position: center right -40px;}
+    #disney:hover{background-position: center right -150px;}
+    #marvel{background-position: top -150px right -250px;}
+    #champions{background-position:left -65px top ;}
+    #champions:hover{background-position: right -60px top -50px;}
+}
+
+@media (max-width:768px){
+    main{width: 425px;}
+    .principal{
+        height: 170px;
+        padding-top:0 ;
+    }
+    
+    .principal figure{
+        width: 70px;
+        height: 70px;
+        margin-top: 0;
+    }
+
+    .cartaz{
+        flex-direction: column;
+    }
+
+    #titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .figura{
+        width: 44%;
+        margin:10px 10px;
+        box-shadow: none;
+    }
+
+    #planos{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #trimestre{
+        width: 80%;
+        margin: 20px 0;
+        padding: 10px ;
+        border: 1px solid #fff;
+    }
+
+    #mes{
+        width: 80%;
+        margin: 20px 0;
+        padding: 10px ;
+        border: 1px solid #fff;
+    }
+
+    #anual{
+        width: 80%;
+        margin: 20px 0;
+        padding: 10px ;
+        border: 1px solid #fff;
+    }
+    
+    #dc{
+        background-position: center right -240px;
+    }
+
+    #nba{
+        background-position: right -120px top -105px;
+    }
+
+    #cartoon{
+        background-position: center right -70px;
+    }
+    #cartoon:hover{
+        background-position: center -100px right 50px;
+    }
+
+    #disney:hover{
+        background-position: center right -170px;
+    }
+
+    #marvel{
+        background-position: top -100px center;
+    }
+
+    #marvel:hover{
+        background-position: right -290px top -90px;
+    }
+
+    #champions{
+        background-position: left -140px top -50px;
+    }
+
+    .contato_detalhes{
+        padding: 20px 0;
+        font-size: 8pt;
+    }
+    
+}
+
+@media (max-width:510px){
+    main{
+        width: 250px;
+    }
+    #esquerda{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #esquerda a{
+        font-size: 8pt;
+    }
+    #esquerda span{
+        font-size: 8pt;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    #esquerda nav{
+        width: 100%;
+    }
+    
+    #info a{
+        font-size: 8pt;
+    }
+    .texto_banner p{
+        font-size: 16pt;
+    }
+    #assistir{
+        width: auto;
+    }
+
+    #assinar{
+        width: auto;
+    }
+    .principal{height: auto; text-align: center; background: linear-gradient( #4955b4,#0b1d2e ,#4955b4)}
+
+    .principal div{
+       display: flex;
+       flex-direction: column;
+       margin: 10px 0;
+    }
+
+    .principal div figure{
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;   
+    }
+
+    #info{
+        text-align: center;
+    }
+
+    #titulo ul{
+        list-style: none;
+        padding: 0;
+        padding-left: 5px;
+    }
+
+    .figura{
+        width: 100%;
+    }
+
+    .foto_universo{
+        width: 50%;
+        height: 50px;
+    }
+
+    #nba{
+        background-position: top right -300px;
+    }
+    #nba:hover{
+        background-position: top right -200px;
+    }
+
+    #dc{
+        background-position: left -170px top -300px;
+    }
+    #dc:hover{
+        background-position: top right -300px;
+    }
+    #cartoon{
+        background-position: center;
+    }
+    #cartoon:hover{
+        background-position: left -300px top -90px;
+    }
+    #disney:hover{
+        background-position: center -250px;
+    }
+    #marvel:hover{
+        background-position: right -330px top -90px;
+    }
+    #champions{
+        background-position: left -190px top -50px;
+    }
+
+    .contato_detalhes{
+        padding: 5px 0;
+        flex-direction: column;
+    }
+
+    #contato form{
+        flex-direction: column;
+    }
+    #contato form .col1{
+        margin: 0;
+        width: auto;
+    }
+
+    #contato form .col2{
+        width: auto;
+        margin: 0;
+    }
+
+    .cartaz{
+        background: linear-gradient( #4955b4,#0b1d2e ,#4955b4);
+        margin: 10px 0;
+    }
+    .cartaz article{
+        flex-direction: column;
+        width: 100%;  
+    }
+
+    .cartaz article div{
+        text-align: center;
+    }
+
+    .cartaz article img{
+        width: 50%;
+    }
+
+}
+
+@media (max-width:300px){
+    main{
+        width: 200px;
+    }
+
+    #esquerda span{
+        font-size: 6pt;
+    }
+
+    #esquerda a{
+        font-size: 7pt;
+    }
+    #rede_social p{
+        font-size: 10pt;
+    }
+
+    #rede_social a{
+        width: 25px;
+    }
+
+    .avaliacao{font-size: 12pt;}
+    #titulo ul{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .figura{
+        margin: auto;
+    }
+
+    #contato form input{
+        height: 30px;
+    }
+}
